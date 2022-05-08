@@ -1,15 +1,15 @@
-# fly.toml file generated for dounot-superfast on 2022-02-28T12:04:20+01:00
+# fly.toml file generated for rough-glitter-5665 on 2022-05-03T13:26:14Z
 
-app = "dounot-superfast"
+app = "rough-glitter-5665"
 
 kill_signal = "SIGINT"
 kill_timeout = 5
 processes = []
 
 [env]
-  CRYSTALLIZE_TENANT_IDENTIFIER = "dounot"
-  SERVICE_API_URL = "https://remix-service-86gdw1dxu-aleksep-gmailcom.vercel.app/api/graphql"
-  NODE_ENV="production"
+  CRYSTALLIZE_TENANT_IDENTIFIER = "tsvetochki-test"
+  NODE_ENV = "production"
+  SERVICE_API_URL = "https://remix-service-api.vercel.app/api/graphql"
 
 [experimental]
   allowed_public_ports = []
