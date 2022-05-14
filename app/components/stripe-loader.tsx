@@ -2,6 +2,7 @@ import { FC, ReactNode } from "react";
 import { Elements } from "@stripe/react-stripe-js";
 import { useStripeConfig } from "../hooks/useStripeConfig";
 import { useStripeLoader } from "../hooks/useStripeLoader";
+import React from "react";
 
 interface StripeLoaderProps {
   loading: ReactNode;

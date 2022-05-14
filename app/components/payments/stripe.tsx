@@ -21,6 +21,7 @@ import {
 import { StripeLoader } from "../stripe-loader";
 import { PaymentProps } from "./types";
 import { Form, useSubmit } from "remix";
+import React from "react";
 
 
 interface FormProps extends PaymentProps {

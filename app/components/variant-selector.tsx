@@ -1,4 +1,5 @@
 import isEqual from "lodash/isEqual";
+import React from "react";
 
 function reduceAttributes(variants) {
   return variants.reduce((acc, variant) => {

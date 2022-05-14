@@ -3,6 +3,7 @@ import { componentContent } from "../crystallize/utils/componentContent";
 import { ProductQuery } from "../crystallize/queries/product.generated";
 import { Image } from "@crystallize/react-image";
 import ReactPlayer from "react-player";
+import React from "react";
 
 interface ProductBodyProps {
   body: ProductQuery["product"]["body"];
@@ -64,7 +65,7 @@ export const ProductBody = ({ body, table }: ProductBodyProps) => {
           >
             <div>
               <h3 className="font-bold text-2xl py-2">{section?.title}</h3>
-              <p className="italic">per 50 g</p>
+              <p className="italic">букета</p>
             </div>
             <div className="lg:w-7/12 w-full">
               {section.properties.map((property, index) => (

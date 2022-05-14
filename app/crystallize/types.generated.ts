@@ -382,7 +382,9 @@ export type Product = Item & {
   defaultVariant?: Maybe<ProductVariant>;
   externalReference?: Maybe<Scalars['String']>;
   id: Scalars['ID'];
+  /** @deprecated option removed */
   isSubscriptionOnly?: Maybe<Scalars['Boolean']>;
+  /** @deprecated option removed */
   isVirtual?: Maybe<Scalars['Boolean']>;
   language?: Maybe<Scalars['String']>;
   name?: Maybe<Scalars['String']>;

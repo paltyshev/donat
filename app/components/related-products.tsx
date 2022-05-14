@@ -2,6 +2,7 @@ import { componentContent } from "../crystallize/utils/componentContent";
 import { ProductQuery } from "../crystallize/queries/product.generated";
 import { Image } from "@crystallize/react-image";
 import { Link } from "remix";
+import React from "react";
 
 interface RelatedProductProps {
   related: ProductQuery["product"]["related"];
