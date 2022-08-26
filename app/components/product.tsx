@@ -119,15 +119,13 @@ export const Product = ({ product }: ProductProps) => {
           <div>
             <h3 className="sr-only">Description</h3>
 
-            <div className="space-y-6">
-              <p className="text-base text-gray-900">
-                <ContentTransformer
-                  json={
-                    componentContent(item.summary.content, "RichTextContent")
-                      ?.json as [any]
-                  }
-                />
-              </p>
+            <div className="space-y-6 text-base text-gray-900">
+              <ContentTransformer
+                json={
+                  componentContent(item.summary.content, "RichTextContent")
+                    ?.json as [any]
+                }
+              />
             </div>
           </div>
         </div>

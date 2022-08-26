@@ -959,14 +959,6 @@ select {
   height: 1.25rem;
 }
 
-.h-3 {
-  height: 0.75rem;
-}
-
-.h-4 {
-  height: 1rem;
-}
-
 .w-full {
   width: 100%;
 }
@@ -997,10 +989,6 @@ select {
 
 .w-auth {
   width: 730px;
-}
-
-.w-3 {
-  width: 0.75rem;
 }
 
 .max-w-2xl {
