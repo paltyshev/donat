@@ -345,7 +345,7 @@ __export(root_exports, {
 var import_remix3 = __toESM(require_dist());
 
 // app/styles/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-5AQASL74.css";
+var tailwind_default = "/build/_assets/tailwind-F42LZ3GO.css";
 
 // app/components/basket/index.tsx
 var import_react = __toESM(require("react"));
@@ -717,7 +717,7 @@ var import_jsx_dev_runtime = require("react/jsx-dev-runtime"), BasketButton = ()
             fill: "#373567"
           }, void 0, !1, {
             fileName: "app/components/basket/basket-button.tsx",
-            lineNumber: 22,
+            lineNumber: 23,
             columnNumber: 9
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("path", {
@@ -725,7 +725,7 @@ var import_jsx_dev_runtime = require("react/jsx-dev-runtime"), BasketButton = ()
             fill: "#373567"
           }, void 0, !1, {
             fileName: "app/components/basket/basket-button.tsx",
-            lineNumber: 26,
+            lineNumber: 27,
             columnNumber: 9
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("path", {
@@ -733,7 +733,7 @@ var import_jsx_dev_runtime = require("react/jsx-dev-runtime"), BasketButton = ()
             fill: "#373567"
           }, void 0, !1, {
             fileName: "app/components/basket/basket-button.tsx",
-            lineNumber: 30,
+            lineNumber: 31,
             columnNumber: 9
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("path", {
@@ -741,13 +741,13 @@ var import_jsx_dev_runtime = require("react/jsx-dev-runtime"), BasketButton = ()
             fill: "#373567"
           }, void 0, !1, {
             fileName: "app/components/basket/basket-button.tsx",
-            lineNumber: 34,
+            lineNumber: 35,
             columnNumber: 9
           }, this)
         ]
       }, void 0, !0, {
         fileName: "app/components/basket/basket-button.tsx",
-        lineNumber: 15,
+        lineNumber: 16,
         columnNumber: 7
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
@@ -755,13 +755,13 @@ var import_jsx_dev_runtime = require("react/jsx-dev-runtime"), BasketButton = ()
         children: totalQuantity
       }, void 0, !1, {
         fileName: "app/components/basket/basket-button.tsx",
-        lineNumber: 40,
+        lineNumber: 41,
         columnNumber: 7
       }, this)
     ]
   }, void 0, !0, {
     fileName: "app/components/basket/basket-button.tsx",
-    lineNumber: 14,
+    lineNumber: 15,
     columnNumber: 5
   }, this);
 };
@@ -839,7 +839,7 @@ function App() {
     );
   }), /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("html", {
     lang: "ru",
-    className: "bg-primary relative z-10",
+    className: "relative z-10",
     children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("head", {
         children: [
@@ -1666,7 +1666,7 @@ var componentContent = (o, v) => o && o.__typename === v ? o : null;
 // app/components/product-body.tsx
 var import_react_content_transformer = require("@crystallize/react-content-transformer");
 var import_react_image = require("@crystallize/react-image"), import_react_player = __toESM(require("react-player")), import_jsx_dev_runtime = require("react/jsx-dev-runtime"), ProductBody = ({ body, table }) => /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
-  className: "flex flex-col gap-3 my-10 lg:w-9/12 w-full mx-auto z-10",
+  className: "flex flex-col gap-3 w-full mx-auto z-10",
   children: [
     componentContent(
       body == null ? void 0 : body.content,
@@ -1677,7 +1677,7 @@ var import_react_image = require("@crystallize/react-image"), import_react_playe
         className: "flex flex-col justify-between",
         children: [
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
-            className: "my-3 text-text md:px-20",
+            className: "my-3 text-text",
             children: [
               paragraph.title && /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h2", {
                 className: "font-semibold text-2xl mb-4",
@@ -1916,7 +1916,7 @@ var VariantSelector = ({
 
 // app/components/related-products.tsx
 var import_react_image2 = require("@crystallize/react-image"), import_remix5 = __toESM(require_dist()), import_jsx_dev_runtime = require("react/jsx-dev-runtime"), RelatedProducts = ({ related }) => /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
-  className: "flex w-full items-start flex-wrap gap-1",
+  className: "flex w-full items-start flex-wrap gap-2",
   children: componentContent(related.content, "ItemRelationsContent").items.map(
     (item, index) => {
       var _a;
@@ -1998,8 +1998,8 @@ var import_react_image2 = require("@crystallize/react-image"), import_remix5 = _
 }, this);
 
 // app/components/product.tsx
-var import_react3 = require("react"), import_remix6 = __toESM(require_dist()), import_jsx_dev_runtime = require("react/jsx-dev-runtime"), Product = ({ product }) => {
-  var _a, _b;
+var import_react3 = require("react"), import_remix6 = __toESM(require_dist()), import_solid = require("@heroicons/react/20/solid"), import_jsx_dev_runtime = require("react/jsx-dev-runtime"), Product = ({ product }) => {
+  var _a;
   let item = componentContent(product, "Product"), navigate = (0, import_remix6.useNavigate)(), [selectedVariant, setSelectedVariant] = (0, import_react3.useState)(item.variants[0]), basket = useBasket(), onVariantChange = (variant) => setSelectedVariant(variant), buy = () => {
     var _a2;
     (_a2 = basket == null ? void 0 : basket.actions) == null || _a2.addItem({
@@ -2009,7 +2009,10 @@ var import_react3 = require("react"), import_remix6 = __toESM(require_dist()), i
       priceVariantIdentifier: "default",
       stock: selectedVariant.stock
     }), navigate("/cart", { replace: !1 });
-  };
+  }, reviews = { href: "#", average: 4, totalCount: 17 };
+  function classNames(...classes) {
+    return classes.filter(Boolean).join(" ");
+  }
   return /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
     className: "py-5",
     children: [
@@ -2017,7 +2020,7 @@ var import_react3 = require("react"), import_remix6 = __toESM(require_dist()), i
         "aria-label": "Breadcrumb",
         children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("ol", {
           role: "list",
-          className: "max-w-2xl mx-auto flex items-center space-x-2 lg:max-w-7xl",
+          className: "mx-auto flex items-center space-x-2 lg:max-w-7xl",
           children: [
             /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("li", {
               children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
@@ -2029,7 +2032,7 @@ var import_react3 = require("react"), import_remix6 = __toESM(require_dist()), i
                     children: "\u0413\u043B\u0430\u0432\u043D\u0430\u044F"
                   }, void 0, !1, {
                     fileName: "app/components/product.tsx",
-                    lineNumber: 46,
+                    lineNumber: 52,
                     columnNumber: 15
                   }, this),
                   /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("svg", {
@@ -2044,23 +2047,23 @@ var import_react3 = require("react"), import_remix6 = __toESM(require_dist()), i
                       d: "M5.697 4.34L8.98 16.532h1.327L7.025 4.341H5.697z"
                     }, void 0, !1, {
                       fileName: "app/components/product.tsx",
-                      lineNumber: 58,
+                      lineNumber: 64,
                       columnNumber: 17
                     }, this)
                   }, void 0, !1, {
                     fileName: "app/components/product.tsx",
-                    lineNumber: 49,
+                    lineNumber: 55,
                     columnNumber: 15
                   }, this)
                 ]
               }, void 0, !0, {
                 fileName: "app/components/product.tsx",
-                lineNumber: 45,
+                lineNumber: 51,
                 columnNumber: 13
               }, this)
             }, void 0, !1, {
               fileName: "app/components/product.tsx",
-              lineNumber: 44,
+              lineNumber: 50,
               columnNumber: 11
             }, this),
             /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("li", {
@@ -2072,50 +2075,49 @@ var import_react3 = require("react"), import_remix6 = __toESM(require_dist()), i
                 children: item.name
               }, void 0, !1, {
                 fileName: "app/components/product.tsx",
-                lineNumber: 63,
+                lineNumber: 69,
                 columnNumber: 13
               }, this)
             }, void 0, !1, {
               fileName: "app/components/product.tsx",
-              lineNumber: 62,
+              lineNumber: 68,
               columnNumber: 11
             }, this)
           ]
         }, void 0, !0, {
           fileName: "app/components/product.tsx",
-          lineNumber: 40,
+          lineNumber: 46,
           columnNumber: 9
         }, this)
       }, void 0, !1, {
         fileName: "app/components/product.tsx",
-        lineNumber: 39,
+        lineNumber: 45,
         columnNumber: 7
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
-        className: "mt-6 max-w-2xl mx-auto sm:px-6 lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-3 lg:gap-x-8",
+        className: "mt-6 mx-auto lg:max-w-7xl",
         children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
-          className: "aspect-w-4 aspect-h-5 sm:rounded-lg sm:overflow-hidden lg:aspect-w-3 lg:aspect-h-4",
+          className: "sm:rounded-lg sm:overflow-hidden",
           children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(import_react_image3.Image, {
             ...item.defaultVariant.firstImage,
-            sizes: "400px",
-            className: "w-full h-full object-center object-cover"
+            className: "w-full h-full object-center object-cover rounded-md overflow-hidden"
           }, void 0, !1, {
             fileName: "app/components/product.tsx",
-            lineNumber: 77,
+            lineNumber: 83,
             columnNumber: 11
           }, this)
         }, void 0, !1, {
           fileName: "app/components/product.tsx",
-          lineNumber: 76,
+          lineNumber: 82,
           columnNumber: 9
         }, this)
       }, void 0, !1, {
         fileName: "app/components/product.tsx",
-        lineNumber: 75,
+        lineNumber: 81,
         columnNumber: 7
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
-        className: "max-w-2xl mx-auto pt-10 pb-16 sm:px-6 lg:max-w-7xl lg:pt-16 lg:pb-24 lg:px-8 lg:grid lg:grid-cols-3 lg:grid-rows-[auto,auto,1fr] lg:gap-x-8",
+        className: "mx-auto pt-10 pb-16 lg:max-w-7xl lg:pt-16 lg:pb-24 lg:grid lg:grid-cols-3 lg:grid-rows-[auto,auto,1fr] lg:gap-x-8",
         children: [
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
             className: "lg:col-span-2 lg:border-r lg:border-gray-200 lg:pr-8",
@@ -2124,12 +2126,12 @@ var import_react3 = require("react"), import_remix6 = __toESM(require_dist()), i
               children: item.name
             }, void 0, !1, {
               fileName: "app/components/product.tsx",
-              lineNumber: 88,
+              lineNumber: 93,
               columnNumber: 11
             }, this)
           }, void 0, !1, {
             fileName: "app/components/product.tsx",
-            lineNumber: 87,
+            lineNumber: 92,
             columnNumber: 9
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
@@ -2140,7 +2142,7 @@ var import_react3 = require("react"), import_remix6 = __toESM(require_dist()), i
                 children: "Product information"
               }, void 0, !1, {
                 fileName: "app/components/product.tsx",
-                lineNumber: 95,
+                lineNumber: 100,
                 columnNumber: 11
               }, this),
               /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("p", {
@@ -2151,7 +2153,74 @@ var import_react3 = require("react"), import_remix6 = __toESM(require_dist()), i
                 ]
               }, void 0, !0, {
                 fileName: "app/components/product.tsx",
-                lineNumber: 96,
+                lineNumber: 101,
+                columnNumber: 11
+              }, this),
+              /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
+                className: "mt-6",
+                children: [
+                  /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h3", {
+                    className: "sr-only",
+                    children: "Reviews"
+                  }, void 0, !1, {
+                    fileName: "app/components/product.tsx",
+                    lineNumber: 107,
+                    columnNumber: 13
+                  }, this),
+                  /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
+                    className: "flex items-center",
+                    children: [
+                      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
+                        className: "flex items-center",
+                        children: [0, 1, 2, 3, 4].map((rating) => /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(import_solid.StarIcon, {
+                          className: classNames(
+                            reviews.average > rating ? "text-yellow-400" : "text-gray-200",
+                            "h-5 w-5 flex-shrink-0"
+                          ),
+                          "aria-hidden": "true"
+                        }, rating, !1, {
+                          fileName: "app/components/product.tsx",
+                          lineNumber: 111,
+                          columnNumber: 19
+                        }, this))
+                      }, void 0, !1, {
+                        fileName: "app/components/product.tsx",
+                        lineNumber: 109,
+                        columnNumber: 15
+                      }, this),
+                      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("p", {
+                        className: "sr-only",
+                        children: [
+                          reviews.average,
+                          " out of 5 stars"
+                        ]
+                      }, void 0, !0, {
+                        fileName: "app/components/product.tsx",
+                        lineNumber: 121,
+                        columnNumber: 15
+                      }, this),
+                      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("a", {
+                        href: reviews.href,
+                        className: "ml-3 text-sm font-medium text-indigo-600 hover:text-indigo-500",
+                        children: [
+                          reviews.totalCount,
+                          " \u043E\u0442\u0437\u044B\u0432\u043E\u0432"
+                        ]
+                      }, void 0, !0, {
+                        fileName: "app/components/product.tsx",
+                        lineNumber: 122,
+                        columnNumber: 15
+                      }, this)
+                    ]
+                  }, void 0, !0, {
+                    fileName: "app/components/product.tsx",
+                    lineNumber: 108,
+                    columnNumber: 13
+                  }, this)
+                ]
+              }, void 0, !0, {
+                fileName: "app/components/product.tsx",
+                lineNumber: 106,
                 columnNumber: 11
               }, this),
               /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
@@ -2162,12 +2231,12 @@ var import_react3 = require("react"), import_remix6 = __toESM(require_dist()), i
                   onVariantChange
                 }, void 0, !1, {
                   fileName: "app/components/product.tsx",
-                  lineNumber: 102,
+                  lineNumber: 130,
                   columnNumber: 13
                 }, this)
               }, void 0, !1, {
                 fileName: "app/components/product.tsx",
-                lineNumber: 101,
+                lineNumber: 129,
                 columnNumber: 11
               }, this),
               /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("button", {
@@ -2176,13 +2245,13 @@ var import_react3 = require("react"), import_remix6 = __toESM(require_dist()), i
                 children: "\u041A\u0443\u043F\u0438\u0442\u044C"
               }, void 0, !1, {
                 fileName: "app/components/product.tsx",
-                lineNumber: 109,
+                lineNumber: 137,
                 columnNumber: 11
               }, this)
             ]
           }, void 0, !0, {
             fileName: "app/components/product.tsx",
-            lineNumber: 94,
+            lineNumber: 99,
             columnNumber: 9
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
@@ -2194,7 +2263,7 @@ var import_react3 = require("react"), import_remix6 = __toESM(require_dist()), i
                   children: "Description"
                 }, void 0, !1, {
                   fileName: "app/components/product.tsx",
-                  lineNumber: 120,
+                  lineNumber: 148,
                   columnNumber: 13
                 }, this),
                 /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
@@ -2203,169 +2272,64 @@ var import_react3 = require("react"), import_remix6 = __toESM(require_dist()), i
                     json: (_a = componentContent(item.summary.content, "RichTextContent")) == null ? void 0 : _a.json
                   }, void 0, !1, {
                     fileName: "app/components/product.tsx",
-                    lineNumber: 123,
+                    lineNumber: 151,
                     columnNumber: 15
                   }, this)
                 }, void 0, !1, {
                   fileName: "app/components/product.tsx",
-                  lineNumber: 122,
+                  lineNumber: 150,
+                  columnNumber: 13
+                }, this),
+                /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(ProductBody, {
+                  body: item.body,
+                  table: item.table
+                }, void 0, !1, {
+                  fileName: "app/components/product.tsx",
+                  lineNumber: 158,
                   columnNumber: 13
                 }, this)
               ]
             }, void 0, !0, {
               fileName: "app/components/product.tsx",
-              lineNumber: 119,
+              lineNumber: 147,
               columnNumber: 11
             }, this)
           }, void 0, !1, {
             fileName: "app/components/product.tsx",
-            lineNumber: 117,
+            lineNumber: 145,
             columnNumber: 9
           }, this)
         ]
       }, void 0, !0, {
         fileName: "app/components/product.tsx",
-        lineNumber: 86,
+        lineNumber: 91,
         columnNumber: 7
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
-        className: "flex lg:flex-row flex-col items-center mt-10 mb-5",
-        children: [
-          /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
-            className: "flex flex-col text-text w-auto",
-            children: [
-              /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h1", {
-                className: "font-extrabold text-5xl mb-3",
-                children: item.name
-              }, void 0, !1, {
-                fileName: "app/components/product.tsx",
-                lineNumber: 136,
-                columnNumber: 11
-              }, this),
-              /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(import_react_content_transformer2.ContentTransformer, {
-                json: (_b = componentContent(item.summary.content, "RichTextContent")) == null ? void 0 : _b.json
-              }, void 0, !1, {
-                fileName: "app/components/product.tsx",
-                lineNumber: 137,
-                columnNumber: 11
-              }, this)
-            ]
-          }, void 0, !0, {
-            fileName: "app/components/product.tsx",
-            lineNumber: 135,
-            columnNumber: 9
-          }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(import_react_image3.Image, {
-            ...item.defaultVariant.firstImage,
-            sizes: "400px",
-            className: "w-full rounded-sm"
-          }, void 0, !1, {
-            fileName: "app/components/product.tsx",
-            lineNumber: 144,
-            columnNumber: 9
-          }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
-            className: "flex flex-col",
-            children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(VariantSelector, {
-              variants: item.variants,
-              selectedVariant,
-              onVariantChange
-            }, void 0, !1, {
-              fileName: "app/components/product.tsx",
-              lineNumber: 150,
-              columnNumber: 11
-            }, this)
-          }, void 0, !1, {
-            fileName: "app/components/product.tsx",
-            lineNumber: 149,
-            columnNumber: 9
-          }, this)
-        ]
-      }, void 0, !0, {
+        children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("p", {
+          className: "text-text mb-4 font-semibold",
+          children: "\u041F\u043E\u0445\u043E\u0436\u0438\u0435 \u0431\u0443\u043A\u0435\u0442\u044B"
+        }, void 0, !1, {
+          fileName: "app/components/product.tsx",
+          lineNumber: 163,
+          columnNumber: 9
+        }, this)
+      }, void 0, !1, {
         fileName: "app/components/product.tsx",
-        lineNumber: 134,
-        columnNumber: 7
-      }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
-        className: "flex z-10 justify-between lg:w-5/12 w-8/12 mx-auto bg-white p-5 text-text rounded-xl",
-        children: [
-          /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
-            children: [
-              /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("p", {
-                className: "font-semibold text-sm",
-                children: "\u0418\u0442\u043E\u0433\u043E"
-              }, void 0, !1, {
-                fileName: "app/components/product.tsx",
-                lineNumber: 159,
-                columnNumber: 11
-              }, this),
-              /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("p", {
-                className: "font-bold text-lg",
-                children: [
-                  "$",
-                  selectedVariant.price
-                ]
-              }, void 0, !0, {
-                fileName: "app/components/product.tsx",
-                lineNumber: 160,
-                columnNumber: 11
-              }, this)
-            ]
-          }, void 0, !0, {
-            fileName: "app/components/product.tsx",
-            lineNumber: 158,
-            columnNumber: 9
-          }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("button", {
-            onClick: () => buy(),
-            className: "bg-background2 px-4 rounded-xl",
-            children: "\u041A\u0443\u043F\u0438\u0442\u044C"
-          }, void 0, !1, {
-            fileName: "app/components/product.tsx",
-            lineNumber: 162,
-            columnNumber: 9
-          }, this)
-        ]
-      }, void 0, !0, {
-        fileName: "app/components/product.tsx",
-        lineNumber: 157,
-        columnNumber: 7
-      }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
-        children: [
-          /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(ProductBody, {
-            body: item.body,
-            table: item.table
-          }, void 0, !1, {
-            fileName: "app/components/product.tsx",
-            lineNumber: 170,
-            columnNumber: 9
-          }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("p", {
-            className: "text-text mb-4 font-semibold",
-            children: "\u041F\u043E\u0445\u043E\u0436\u0438\u0435 \u0431\u0443\u043A\u0435\u0442\u044B"
-          }, void 0, !1, {
-            fileName: "app/components/product.tsx",
-            lineNumber: 171,
-            columnNumber: 9
-          }, this)
-        ]
-      }, void 0, !0, {
-        fileName: "app/components/product.tsx",
-        lineNumber: 169,
+        lineNumber: 162,
         columnNumber: 7
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(RelatedProducts, {
         related: item.related
       }, void 0, !1, {
         fileName: "app/components/product.tsx",
-        lineNumber: 173,
+        lineNumber: 165,
         columnNumber: 7
       }, this)
     ]
   }, void 0, !0, {
     fileName: "app/components/product.tsx",
-    lineNumber: 38,
+    lineNumber: 44,
     columnNumber: 5
   }, this);
 };
@@ -2420,28 +2384,14 @@ function headers() {
 function Index() {
   let data = (0, import_remix7.useLoaderData)();
   return /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
-    children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
-        className: "bg-background5 z-0 absolute left-0 right-0 rounded-full",
-        style: {
-          bottom: "10%",
-          top: "20%",
-          zIndex: "-1"
-        }
-      }, void 0, !1, {
-        fileName: "app/routes/shop/$product.tsx",
-        lineNumber: 56,
-        columnNumber: 7
-      }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Product, {
-        product: data.product
-      }, void 0, !1, {
-        fileName: "app/routes/shop/$product.tsx",
-        lineNumber: 64,
-        columnNumber: 7
-      }, this)
-    ]
-  }, void 0, !0, {
+    children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Product, {
+      product: data.product
+    }, void 0, !1, {
+      fileName: "app/routes/shop/$product.tsx",
+      lineNumber: 56,
+      columnNumber: 7
+    }, this)
+  }, void 0, !1, {
     fileName: "app/routes/shop/$product.tsx",
     lineNumber: 55,
     columnNumber: 5
@@ -3065,7 +3015,7 @@ function Cart() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { version: "985dfc1d", entry: { module: "/build/entry.client-JGPSWDHB.js", imports: ["/build/_shared/chunk-LF6OR5BN.js", "/build/_shared/chunk-AMFLFMGS.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-F2A4WI7X.js", imports: ["/build/_shared/chunk-6E6OLZTB.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !0, hasErrorBoundary: !0 }, "routes/cart": { id: "routes/cart", parentId: "root", path: "cart", index: void 0, caseSensitive: void 0, module: "/build/routes/cart-UQQSJDFJ.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/checkout": { id: "routes/checkout", parentId: "root", path: "checkout", index: void 0, caseSensitive: void 0, module: "/build/routes/checkout-IQ4WLHVD.js", imports: ["/build/_shared/chunk-YZPNLZH7.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/confirmation/$orderId": { id: "routes/confirmation/$orderId", parentId: "root", path: "confirmation/:orderId", index: void 0, caseSensitive: void 0, module: "/build/routes/confirmation/$orderId-IJKTX5YN.js", imports: ["/build/_shared/chunk-YZPNLZH7.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-LHMIPQMY.js", imports: ["/build/_shared/chunk-L2Y367EV.js", "/build/_shared/chunk-YZPNLZH7.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/shop/$product": { id: "routes/shop/$product", parentId: "root", path: "shop/:product", index: void 0, caseSensitive: void 0, module: "/build/routes/shop/$product-XNTUWTMO.js", imports: ["/build/_shared/chunk-L2Y367EV.js", "/build/_shared/chunk-YZPNLZH7.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-985DFC1D.js" };
+var assets_manifest_default = { version: "500e357e", entry: { module: "/build/entry.client-JGPSWDHB.js", imports: ["/build/_shared/chunk-LF6OR5BN.js", "/build/_shared/chunk-AMFLFMGS.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-EYLYLC2Y.js", imports: ["/build/_shared/chunk-6E6OLZTB.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !0, hasErrorBoundary: !0 }, "routes/cart": { id: "routes/cart", parentId: "root", path: "cart", index: void 0, caseSensitive: void 0, module: "/build/routes/cart-UQQSJDFJ.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/checkout": { id: "routes/checkout", parentId: "root", path: "checkout", index: void 0, caseSensitive: void 0, module: "/build/routes/checkout-IQ4WLHVD.js", imports: ["/build/_shared/chunk-YZPNLZH7.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/confirmation/$orderId": { id: "routes/confirmation/$orderId", parentId: "root", path: "confirmation/:orderId", index: void 0, caseSensitive: void 0, module: "/build/routes/confirmation/$orderId-IJKTX5YN.js", imports: ["/build/_shared/chunk-YZPNLZH7.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-LHMIPQMY.js", imports: ["/build/_shared/chunk-L2Y367EV.js", "/build/_shared/chunk-YZPNLZH7.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/shop/$product": { id: "routes/shop/$product", parentId: "root", path: "shop/:product", index: void 0, caseSensitive: void 0, module: "/build/routes/shop/$product-T52LA4R5.js", imports: ["/build/_shared/chunk-L2Y367EV.js", "/build/_shared/chunk-YZPNLZH7.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-500E357E.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", publicPath = "/build/", entry = { module: entry_server_exports }, routes = {

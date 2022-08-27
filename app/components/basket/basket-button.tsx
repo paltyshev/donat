@@ -1,4 +1,5 @@
 import { useBasket } from "./index";
+import { ShoppingBagIcon } from '@heroicons/react/20/solid'
 
 export const BasketButton = () => {
   let totalQuantity;

@@ -58,7 +58,7 @@ export default function App() {
   }
 
   return (
-    <html lang="ru" className="bg-primary relative z-10">
+    <html lang="ru" className="relative z-10">
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />

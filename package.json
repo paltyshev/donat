@@ -21,6 +21,8 @@
     "@crystallize/react-content-transformer": "^2.0.0",
     "@crystallize/react-image": "^7.3.1",
     "@graphql-codegen/typescript": "^2.4.2",
+    "@headlessui/react": "^1.6.6",
+    "@heroicons/react": "^2.0.8",
     "@remix-run/react": "^1.2.2",
     "@remix-run/serve": "^1.2.2",
     "@stripe/react-stripe-js": "^1.7.0",

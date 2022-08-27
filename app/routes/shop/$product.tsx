@@ -53,14 +53,6 @@ export default function Index() {
 
   return (
     <div>
-      <div
-        className="bg-background5 z-0 absolute left-0 right-0 rounded-full"
-        style={{
-          bottom: "10%",
-          top: "20%",
-          zIndex: "-1",
-        }}
-      ></div>
       <Product product={data.product} />
     </div>
   );
