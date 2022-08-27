@@ -11,7 +11,6 @@ interface ProductBodyProps {
 }
 
 export const ProductBody = ({ body, table }: ProductBodyProps) => {
-  
   return (
     <div className="flex flex-col gap-3 my-10 lg:w-9/12 w-full mx-auto z-10">
       {componentContent(
@@ -47,10 +46,20 @@ export const ProductBody = ({ body, table }: ProductBodyProps) => {
             <div className="my-5">
               <ReactPlayer
                 controls
-                url={paragraph?.videos && paragraph?.videos.length>0 && paragraph?.videos[0].playlists[1]}
+                url={
+                  paragraph?.videos &&
+                  paragraph?.videos.length > 0 &&
+                  paragraph?.videos[0].playlists[1]
+                }
                 width="100%"
-                height="400px"
-                light={paragraph?.videos && paragraph?.videos.length >0 && paragraph?.videos[0].thumbnails && paragraph?.videos[0].thumbnails.length > 0 && paragraph?.videos[0].thumbnails[0].url}
+                height="100%"
+                light={
+                  paragraph?.videos &&
+                  paragraph?.videos.length > 0 &&
+                  paragraph?.videos[0].thumbnails &&
+                  paragraph?.videos[0].thumbnails.length > 0 &&
+                  paragraph?.videos[0].thumbnails[0].url
+                }
                 playing={true}
               />
             </div>

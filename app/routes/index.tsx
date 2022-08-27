@@ -72,14 +72,7 @@ export default function Index() {
 
   return (
     <div className="py-20">
-      <div
-        className="bg-background5 z-0 absolute left-0 right-0 bottom-0 rounded-tl-full rounded-tr-full"
-        style={{
-          top: "45%",
-          zIndex: "-1",
-        }}
-      ></div>
-      <Grid model={grid.content.grids[0]} className="gap-5">
+      <Grid model={grid.content.grids[0]} className="gap-3 sm:gap-5">
         {children}
       </Grid>
       <Products donuts={donuts} />

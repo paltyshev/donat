@@ -786,7 +786,7 @@ select {
 
 @media (max-width: 1024px) {
   #grid-item {
-    grid-column: span 2 !important;
+    grid-column: span 3 !important;
   }
 }
 
@@ -957,10 +957,6 @@ select {
 
 .h-5 {
   height: 1.25rem;
-}
-
-.h-4 {
-  height: 1rem;
 }
 
 .w-full {
@@ -1383,12 +1379,6 @@ select {
 
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-img {
-  height: -webkit-fill-available;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .even\:bg-grey:nth-child(even) {
